@@ -6,8 +6,35 @@
     <title>Your project name</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container mx-auto bg-warning p-4 my-4">
         <!-- Your code comes here -->
+        <form id="frm-car">
+            <legend>Car Hire</legend>
+            <div class="mb-3">
+                <label for="disabledSelect" class="form-label">Make</label>
+                <select id="disabledSelect" name="make" class="form-select">
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="BMW">BMW</option>
+                </select>
+            </div>
+             <div class="mb-3">
+                <label for="disabledSelect" class="form-label">Model</label>
+                <select id="disabledSelect" name="model" class="form-select">
+                    <option value="Hilux">Hilux</option>
+                    <option value="Fit">Fit</option>
+                    <option value="Patrol">Patrol</option>
+                    <option value="X1">X1</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Year</label>
+                <input type="text" name="year" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 </body>
 </html>
